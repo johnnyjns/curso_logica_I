@@ -2,8 +2,21 @@
 
 <script>
     var ano = 2016;
-    document.write("Flávio nasceu em " + (ano - 39) + " anos" + "<br>");
-    document.write("Joaquim nasceu em " + (ano - 20) + " anos" + "<br>");
-    document.write("Barney nasceu em " + (ano - 40) + " anos" + "<br>");
+    var idadeFlavio = 39;
+    var idadeJoaquim = 20;
+    var idadeBarney = 41;
+    var nome = "Johnny";
+    var sobreNome = "Souto";
+    var nomeCompleto = nome + " " + sobreNome;
+    var dataNascJohnny = 1982;
+    var idadeJohnny = ano - dataNascJohnny;
+    document.write("Flávio nasceu em " + (ano - idadeFlavio) + " anos" + "<br>");
+    document.write("Joaquim nasceu em " + (ano - idadeJoaquim) + " anos" + "<br>");
+    ano = 2017;
+    document.write("Barney nasceu em " + (ano - idadeBarney) + " anos" + "<br>");
     console.log(ano);
+    var media = (idadeFlavio + idadeJoaquim + idadeBarney) / 3;
+    document.write("A média das idades são: " + Math.round(media) + " anos<br>");
+    document.write("O " + nome + " tem " + idadeJohnny + " anos.<br>");
+    document.write("Ele nasceu em " + dataNascJohnny + ".");
 </script>
