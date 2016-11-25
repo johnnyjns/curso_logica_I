@@ -1,0 +1,21 @@
+<html lang="pt-BR">
+<meta charset="utf-8">
+<script>
+    function pulaLinha(){
+        document.write("<br>");
+    }
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+    var d = new Date();
+    var ano = d.getFullYear();
+    var descobrimento = 1500;
+    var mediaAnos = 28;
+    var geracoes = (ano - descobrimento) / mediaAnos;
+
+    mostra("A média de gerações que o Brasil teve foi de: " + Math.round(geracoes) + " gerações.");
+
+    console.log(ano);
+
+</script>
