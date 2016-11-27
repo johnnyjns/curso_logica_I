@@ -8,6 +8,17 @@
         document.write(frase);
         pulaLinha();
     }
-    
+    var anoCopa = 1930;
+    var d = new Date();
+    var ano = d.getFullYear();
+    console.log(ano);
+    var dataLimite = parseInt(prompt("Digita a data limite!"));
+    while(anoCopa <= dataLimite){
+      mostra("Teve copa em " + anoCopa);
+      anoCopa = anoCopa + 4;
+    }
+
+    mostra("Fim.");
+    console.log(anoCopa);
 
 </script>
