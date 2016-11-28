@@ -8,13 +8,18 @@
         document.write(frase);
         pulaLinha();
     }
-
-    for(var multiplicador = 1; multiplicador <= 10; multiplicador++){
-      mostra("7 x " + multiplicador + " = "  + (7 * multiplicador));
+    var numero = 30;
+    while(numero >= 30 && numero <= 40){
+      if(numero == 33 || numero == 37){
+        // pulaLinha();
+        numero++;
+      }else{
+        mostra(numero);
+        numero++;
+      }
     }
-
     mostra("Fim");
 
-    console.log("nada");
+    console.log(numero);
 
 </script>
